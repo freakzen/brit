@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReliefFund - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-heading">Every Life Matters</h1>
+                    <p class="hero-description">Millions face crisis due to war, displacement, and failed governance. Your donation provides immediate relief: clean water, nutritious food, and safe shelter.</p>
+                    <div class="hero-buttons">
+                        <a href="{{ url_for('donate') }}" class="btn btn-primary" aria-label="Donate Now">Donate Now</a>
+                        <a href="{{ url_for('impact') }}" class="btn btn-secondary" aria-label="Learn More About Our Impact">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-stats" role="region" aria-label="Our Impact Statistics">
+                    <div class="stat-item">
+                        <span class="stat-number" aria-hidden="true">2.3M+</span>
+                        <p class="stat-label">People Helped</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" aria-hidden="true">45+</span>
+                        <p class="stat-label">Countries</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" aria-hidden="true">$12M+</span>
+                        <p class="stat-label">Funds Raised</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="donation-options" aria-labelledby="donation-options-heading">
+            <div class="container">
+                <h2 id="donation-options-heading" class="visually-hidden">Donation Options</h2>
+                <div class="donation-cards">
+                    <div class="donation-card" tabindex="0">
+                        <h3>$25</h3>
+                        <p>Provides clean water for a family for one month</p>
+                    </div>
+                    <div class="donation-card" tabindex="0">
+                        <h3>$50</h3>
+                        <p>Feeds a family nutritious meals for two weeks</p>
+                    </div>
+                    <div class="donation-card" tabindex="0">
+                        <h3>$100</h3>
+                        <p>Provides emergency shelter materials</p>
+                    </div>
+                </div>
+                <a href="{{ url_for('donate') }}" class="btn btn-primary btn-large" aria-label="Donate Now">
+                    Donate Now <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
