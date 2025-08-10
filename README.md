@@ -1,4 +1,4 @@
-# 🌍 Brit: Fund Relief for Civilians in War Zones  
+# 🌍 Brit: Fund Relief for Civilians in War Zones  (ONGOING)
 
 **Brit** is a humanitarian platform designed to provide urgent financial aid to civilians trapped in war zones by connecting global donors with trusted NGOs. Our mission is to ensure transparent, efficient, and direct fund allocation to those who need it most.  
 
